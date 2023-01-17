@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/darkGray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/darkGray">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="175dp"
+            android:fontFamily="Arial"
+            android:layout_height="wrap_content"
+            android:text="random title"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="@color/peach"
+            tools:ignore="HardcodedText" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/productBrandName"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:text="random brand"
+                android:fontFamily="Arial"
+                android:textStyle="italic|bold"
+                android:textColor="@color/purple_200"
+                tools:ignore="HardcodedText" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/productRating"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:text="random rating"
+                android:fontFamily="Arial"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <ImageView
+                android:id="@+id/thumbImage"
+                android:layout_width="175dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_launcher"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/product_image"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                tools:ignore="ContentDescription" />
+
+
+        </LinearLayout>
+
+         </LinearLayout>
+
+        <TextView
+            android:id="@+id/productDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="Arial"
+            android:text="random description"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+         android:layout_width="match_parent"
+         android:layout_height="10dp" />
+        <TextView
+            android:id="@+id/productDetails"
+            android:layout_marginEnd="6dp"
+            android:textAlignment="textEnd"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="Arial"
+            android:text="View Details>>"
+            android:textStyle="italic|bold"
+            android:textColor="@color/peach"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
